@@ -1,28 +1,45 @@
 {
-  "name": "frontend",
+  "name": "@figma/my-make-file",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "build": "vite build",
+    "start": "vite"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "lucide-react": "^1.14.0",
+    "swiper": "^12.1.4"
   },
   "devDependencies": {
-    "@types/react": "^18.2.43",
-    "@types/react-dom": "^18.2.17",
+    "@tailwindcss/vite": "4.1.12",
+    "@types/react": "^19.2.6",
+    "@types/react-dom": "^19.2.0",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
-    "@vitejs/plugin-react": "^4.2.1",
+    "@vitejs/plugin-react": "4.7.0",
     "eslint": "^8.55.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "tailwindcss": "4.1.12",
     "typescript": "^5.2.2",
-    "vite": "^5.0.8"
+    "vite": "6.3.5"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
+  },
+  "pnpm": {
+    "overrides": {
+      "vite": "6.3.5"
+    }
   }
 }
