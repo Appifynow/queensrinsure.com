@@ -1,5 +1,5 @@
 {
-  "name": "queeninsure.com",
+  "name": "benifitresolutions.com",
   "private": true,
   "version": "0.0.1",
   "type": "module",
@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "lucide-react": "^1.14.0",
+    "react-router-dom": "^7.15.1",
     "swiper": "^12.1.4"
   },
   "devDependencies": {
