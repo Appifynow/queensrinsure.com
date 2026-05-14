@@ -1,0 +1,4 @@
+**/dist/
+node_modules/
+packaged-template.yaml
+.env
