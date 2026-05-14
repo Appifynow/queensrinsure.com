@@ -1,0 +1,24 @@
+{
+  "name": "leblis.com",
+  "private": true,
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "start": "npm-run-all --parallel start:*",
+    "start:api": "npm run start --workspace=apps/backend",
+    "start:web": "npm run start --workspace=apps/frontend",
+    "deploy": "sh deploy.sh"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "dependencies": {
+    "use-shopping-cart": "^3.2.0"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "dotenv": "^17.4.2",
+    "npm-run-all": "^4.1.5",
+    "stripe": "^22.0.2",
+    "tsx": "^4.21.0"
+  }
+}
