@@ -2,12 +2,16 @@
 import { Calendar, MessageSquare} from 'lucide-react';
 import 'swiper/css';
 import { ImageWithFallback } from './components/utils/ImageWithFallback';
-import { Footer } from './components/Footer';
+import { Providers } from './components/Providers';
 import { useState } from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import { AgentsSection } from './pages/Agents';
+import { Home } from './pages/Home';
 import { ScheduleSection } from './pages/Booking';
 import { FAQSection } from './pages/FAQ';
+import { agents } from './data/agents';
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 
 
 const providers: Provider[] = [
@@ -23,63 +27,18 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 flex flex-col">
-      <ImageWithFallback style={{ height: '100px', width: '100px'}} src="https://images.squarespace-cdn.com/content/v1/66a29e697b928f1f6b7e62c0/ace65cbb-1d78-4511-8c2d-3ac60c170e72/Untitled+design+%287%29.png?format=1500w" />
-      {/* Header - Smaller */}
-      <header className="bg-white shadow-lg border-b-4 border-blue-600">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <h1 className="text-4xl font-bold text-gray-900 text-center">Benifit Resolutions</h1>
-        </div>
-      </header>
-
-      {/* Navigation */}
-      <nav className="bg-white border-b-2 border-gray-200 sticky top-0 z-10 shadow-md">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex gap-4 py-4">
-            <Link
-              to="/"
-              className={`flex-1 py-5 px-6 rounded-xl text-2xl font-semibold transition-all ${
-                location.pathname === '/'
-                  ? 'bg-blue-600 text-white shadow-lg'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-              }`}
-            >
-              Your Agents
-            </Link>
-            <Link
-              to="/schedule"
-              className={`flex-1 py-5 px-6 rounded-xl text-2xl font-semibold transition-all flex items-center justify-center gap-3 ${
-                location.pathname === '/schedule'
-                  ? 'bg-green-600 text-white shadow-lg'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-              }`}
-            >
-              <Calendar className="w-7 h-7" />
-              Schedule Meeting
-            </Link>
-            <Link
-              to="/faq"
-              className={`flex-1 py-5 px-6 rounded-xl text-2xl font-semibold transition-all flex items-center justify-center gap-3 ${
-                location.pathname === '/faq'
-                  ? 'bg-purple-600 text-white shadow-lg'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-              }`}
-            >
-              <MessageSquare className="w-7 h-7" />
-              FAQs
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <Header />
 
       {/* Main Content */}
-      <main className="flex-1 max-w-7xl mx-auto px-6 py-12 w-full">
         <Routes>
-          <Route path="/" element={<AgentsSection  />} />
-          <Route path="/schedule" element={<ScheduleSection  />} />
+          <Route path="/agents" element={<AgentsSection />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/schedule" element={<ScheduleSection agents={agents}  />} />
           <Route path="/faq" element={<FAQSection />} />
         </Routes>
-      </main>
       {/* <Footer /> */}
+      <Providers />
+      <Footer />
     </div>
   );
 }

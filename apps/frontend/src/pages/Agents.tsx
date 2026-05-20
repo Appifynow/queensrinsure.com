@@ -5,7 +5,7 @@ import { agents } from "../data/agents";
 
 export function AgentsSection() {
   return (
-    <div className="space-y-10">
+    <main className="flex-1 max-w-7xl mx-auto px-6 py-12 w-full">
       <div className="text-center space-y-4">
         <h2 className="text-5xl font-bold text-gray-900">Your Insurance Advisors</h2>
         <p className="text-2xl text-gray-700">Meet the team dedicated to helping you</p>
@@ -66,6 +66,6 @@ export function AgentsSection() {
           </div>
         ))}
       </div>
-    </div>
+    </main>
   );
 }

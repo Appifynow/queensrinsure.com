@@ -48,7 +48,7 @@ export function FAQSection() {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <main className="max-w-4xl mx-auto flex-1 mx-auto px-6 py-12 w-full">
       <div className="bg-white rounded-3xl shadow-xl p-12">
         <div className="text-center mb-10">
           <div className="flex items-center justify-center gap-4 mb-4">
@@ -107,6 +107,6 @@ export function FAQSection() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
