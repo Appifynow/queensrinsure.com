@@ -1,6 +1,7 @@
 import { MapPin, Phone, Mail, Calendar } from "lucide-react";
 import { Link } from "react-router-dom";
 import { agents } from "../data/agents";
+import { formatPhoneNumber } from "../data/phoneNumberFormater";
 
 
 export function AgentsSection() {
@@ -44,7 +45,7 @@ export function AgentsSection() {
                   className="flex items-center gap-3 text-xl text-gray-700 hover:text-blue-600 transition-colors"
                 >
                   <Phone className="w-6 h-6" />
-                  <span>{agent.phone}</span>
+                  <span>{formatPhoneNumber(agent.phone)}</span>
                 </a>
                 <a
                   href={`mailto:${agent.email}`}
