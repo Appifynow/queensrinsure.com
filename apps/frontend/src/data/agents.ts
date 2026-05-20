@@ -6,7 +6,7 @@ export const agents: Agent[] = [
     name: 'Drewsilla Mcmillan',
     photo: drew,
     title: 'Senior Insurance Advisor',
-    phone: '1-800-555-0101',
+    phone: '9046109597',
     email: 'd.mcmillan@healthcarenav.com',
     specialty: 'Medicare & Life Insurance',
     states: ['California', 'Oregon', 'Washington',]
@@ -15,10 +15,10 @@ export const agents: Agent[] = [
     id: 2,
     name: 'David Queen Sr.',
     photo: dq,
-    title: 'Insurance Specialist',
+    title: 'Insurance Advisor',
     phone: '6097429803',
     email: 'queensrinsure@outlook.com',
-    specialty: 'Medicare, Final Expenses',
+    specialty: 'Medicare, Final Expenses, Dental & Vision, Hospital Indemnity',
     states: ['Georgia']
   },
   {
