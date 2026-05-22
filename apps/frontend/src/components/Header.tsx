@@ -1,7 +1,6 @@
 import { Calendar, MessageSquare } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import Facebook  from '../assests/images/Facebook_Logo_Primary.png'
 
 export const Header: React.FC = () => {
 
