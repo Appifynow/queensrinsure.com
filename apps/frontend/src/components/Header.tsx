@@ -13,7 +13,7 @@ export const Header: React.FC = () => {
           <h1 className="text-4xl font-bold text-gray-900 text-center">Benefit Resolutions</h1>
         </div>
         <div className="absolute right-6 top-6">
-           <a href="https://www.facebook.com/BenefitResolutions" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline"><img style={{ height: '40px'}} src={Facebook} alt="follow benefit resolutions on Facebook" /></a> 
+           <a href="https://www.facebook.com/profile.php?id=61581456060211" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline"><img style={{ height: '40px'}} src={Facebook} alt="follow benefit resolutions on Facebook" /></a> 
         </div>
       </header>
 
@@ -41,17 +41,7 @@ export const Header: React.FC = () => {
             >
               Your Agents
             </Link>
-            <Link
-              to="/schedule"
-              className={`flex-1 py-5 px-6 rounded-xl text-2xl font-semibold transition-all flex items-center justify-center gap-3 ${
-                location.pathname === '/schedule'
-                  ? 'bg-green-600 text-white shadow-lg'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-              }`}
-            >
-              <Calendar className="w-7 h-7" />
-              Schedule Meeting
-            </Link>
+
             <Link
               to="/faq"
               className={`flex-1 py-5 px-6 rounded-xl text-2xl font-semibold transition-all flex items-center justify-center gap-3 ${

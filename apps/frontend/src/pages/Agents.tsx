@@ -13,7 +13,7 @@ export function AgentsSection() {
       </div>
 
       <div className="grid md:grid-cols-3 gap-8">
-        {agents.map((agent) => (
+        {agents.map((agent, index) => (
           <div key={agent.id} className="bg-white rounded-3xl shadow-xl overflow-hidden border-4 border-transparent hover:border-blue-500 transition-all">
             <div className="aspect-square overflow-hidden bg-gray-100">
               <img
@@ -57,7 +57,7 @@ export function AgentsSection() {
               </div>
 
               <Link
-                to="/schedule"
+                to={`/schedule?agentId=${index}`}
                 className="w-full bg-green-600 hover:bg-green-700 text-white rounded-xl px-6 py-4 text-xl font-semibold transition-colors flex items-center justify-center gap-3 mt-4"
               >
                 <Calendar className="w-6 h-6" />

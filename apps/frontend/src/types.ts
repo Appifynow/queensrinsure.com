@@ -8,6 +8,7 @@ interface Agent {
   email: string;
   specialty: string;
   states: string[];
+  calLink: string;
 }
 
 interface Provider {name: string, logo: string}

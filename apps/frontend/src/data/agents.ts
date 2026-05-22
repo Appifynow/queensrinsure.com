@@ -7,9 +7,10 @@ export const agents: Agent[] = [
     photo: drew,
     title: 'Senior Insurance Advisor',
     phone: '9046109597',
-    email: 'd.mcmillan@healthcarenav.com',
-    specialty: 'Medicare & Life Insurance',
-    states: ['California', 'Oregon', 'Washington',]
+    email: 'drewmc4rhgroup@gmail.com',
+    specialty: 'Medicare Advantage, Medicare Supplements, Dental & Vision, Hospital Indemnity, Short Term Home Health',
+    states: ['Georgia', 'New York'],
+    calLink: 'david-queen-jr',
   },
   {
     id: 2,
@@ -19,16 +20,24 @@ export const agents: Agent[] = [
     phone: '6097429803',
     email: 'queensrinsure@outlook.com',
     specialty: 'Medicare, Final Expenses, Dental & Vision, Hospital Indemnity',
-    states: ['Georgia']
+    states: ['Georgia'],
+    calLink: 'david-queen-jr',
   },
   {
     id: 3,
     name: 'Khalid Kareem',
     photo: 'https://images.unsplash.com/photo-1718209881007-c0ecdfc00f9d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600',
-    title: 'Client Services Manager',
-    phone: '1-800-555-0103',
+    title: 'Insurance Advisor',
+    phone: '8005550103',
     email: 'khalid.kareem@healthcarenav.com',
     specialty: 'Life Insurance & Estate Planning',
-    states: ['Florida', 'Georgia', 'North Carolina', 'South Carolina']
+    states: ['Florida', 'Georgia', 'North Carolina', 'South Carolina'],
+    calLink: 'david-queen-jr',
   }
 ];
+
+export const events = {
+  'video': 'zoom-meet-with-agent',
+  'phone': 'phone-call',
+  'office': 'office-visit',
+}

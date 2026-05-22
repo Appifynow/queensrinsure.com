@@ -15,7 +15,7 @@ export function FAQSection() {
     },
     {
       question: 'How do I file a claim?',
-      answer: 'Contact your agent directly to start the claims process. They will guide you through each step and help you gather the necessary documentation. You can also call our 24/7 claims hotline at 1-800-CLAIMS-1.'
+      answer: 'Contact your agent directly to start the claims process. They will guide you through each step and help you gather the necessary documentation.'
     },
     {
       question: 'When is my premium payment due?',
@@ -91,11 +91,11 @@ export function FAQSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="tel:1-800-555-0100"
+              href="/agents"
               className="flex items-center justify-center gap-3 px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xl font-semibold transition-colors"
             >
               <Phone className="w-6 h-6" />
-              Call 1-800-HELP-NOW
+              Schedule a meeting
             </a>
             <a
               href="mailto:support@healthcarenav.com"
