@@ -6,9 +6,9 @@ export const Header: React.FC = () => {
 
   const location = useLocation();
     return (
-      <header className=" flex bg-white shadow-lg border-b-4 border-blue-600">
+      <header className=" bg-gray-800 shadow-lg">
       {/* Navigation */}
-      <nav className="bg-white border-b-2 border-gray-200 sticky top-0 z-10 shadow-md">
+      <nav className="border-b-2 sticky top-0 z-10 shadow-md">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex gap-4 py-4">
             <Link

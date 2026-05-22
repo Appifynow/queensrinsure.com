@@ -1,4 +1,5 @@
 import { ImageWithFallback } from "./utils/ImageWithFallback";
+import Facebook  from '../assests/images/Facebook_Logo_Primary.png'
 
 export const Footer = () => {
     return (
@@ -10,9 +11,9 @@ export const Footer = () => {
                 powered by <a href="https://www.openlaunchworks.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">OpenLaunchWorks</a>
                 </span>
                 <a href="https://www.openlaunchworks.com/accessibility" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Accessibility Statement</a>
-                   <div className="absolute right-6 top-6">
-           <a href="https://www.facebook.com/profile.php?id=61581456060211" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline"><img style={{ height: '40px'}} src={Facebook} alt="follow benefit resolutions on Facebook" /></a> 
-        </div>
+                <div className="right-6 top-6">
+                    <a href="https://www.facebook.com/profile.php?id=61581456060211" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline"><img style={{ height: '40px'}} src={Facebook} alt="follow benefit resolutions on Facebook" /></a> 
+                </div>
              </footer>
     );
 }
