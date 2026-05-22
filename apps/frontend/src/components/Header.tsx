@@ -7,16 +7,7 @@ export const Header: React.FC = () => {
 
   const location = useLocation();
     return (
-        <>
       <header className=" flex bg-white shadow-lg border-b-4 border-blue-600">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <h1 className="text-4xl font-bold text-gray-900 text-center">Benefit Resolutions</h1>
-        </div>
-        <div className="absolute right-6 top-6">
-           <a href="https://www.facebook.com/profile.php?id=61581456060211" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline"><img style={{ height: '40px'}} src={Facebook} alt="follow benefit resolutions on Facebook" /></a> 
-        </div>
-      </header>
-
       {/* Navigation */}
       <nav className="bg-white border-b-2 border-gray-200 sticky top-0 z-10 shadow-md">
         <div className="max-w-7xl mx-auto px-6">
@@ -56,6 +47,6 @@ export const Header: React.FC = () => {
           </div>
         </div>
       </nav>
-      </>
+      </header>
     );
 }
