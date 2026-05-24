@@ -4,16 +4,15 @@ import Facebook  from '../assests/images/Facebook_Logo_Primary.png'
 export const Footer = () => {
     return (
               <footer className="flex justify-between items-center p-4 bg-gray-800 text-white">
-                <a href="https://www.blackownedbwk.com/" target="_blank" rel="noopener noreferrer" className="relative bottom-4">
-                <ImageWithFallback alt="black owned Brunswick" style={{ height: '100px', width: '100px'}} src="https://images.squarespace-cdn.com/content/v1/66a29e697b928f1f6b7e62c0/ace65cbb-1d78-4511-8c2d-3ac60c170e72/Untitled+design+%287%29.png?format=1500w" />
+                <a  href="https://www.blackownedbwk.com/" target="_blank" rel="noopener noreferrer" className="bottom-4">
+                <ImageWithFallback alt="black owned Brunswick" style={{ height: '60px', width: '60px'}} src="https://images.squarespace-cdn.com/content/v1/66a29e697b928f1f6b7e62c0/ace65cbb-1d78-4511-8c2d-3ac60c170e72/Untitled+design+%287%29.png?format=1500w" />
                 </a>
-                <span>
-                powered by <a href="https://www.openlaunchworks.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">OpenLaunchWorks</a>
+                <a style={{ color: 'white' }} href="https://www.openlaunchworks.com/accessibility" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Accessibility Statement</a>
+                <span style={{ color: 'white' }}>
+                <span className="hidden md:inline">powered by </span><a style={{ color: 'white' }} href="https://www.openlaunchworks.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">OpenLaunchWorks</a>
                 </span>
-                <a href="https://www.openlaunchworks.com/accessibility" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Accessibility Statement</a>
-                <div className="right-6 top-6">
-                    <a href="https://www.facebook.com/profile.php?id=61581456060211" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline"><img style={{ height: '40px'}} src={Facebook} alt="follow benefit resolutions on Facebook" /></a> 
-                </div>
+                <a  href="https://www.facebook.com/profile.php?id=61581456060211" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline"><img style={{ height: '40px'}} src={Facebook} alt="follow benefit resolutions on Facebook" /></a> 
+
              </footer>
     );
 }

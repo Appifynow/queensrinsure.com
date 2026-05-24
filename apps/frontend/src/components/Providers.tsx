@@ -19,7 +19,7 @@ const providers: Provider[] = [
     <footer className="bg-white border-t-4 border-blue-600 py-8">
       <div className="max-w-7xl mx-auto px-6">
         <h3 className="text-2xl font-bold text-gray-900 text-center mb-6">
-          We Work With Leading Insurance Providers
+          We work with leading Insurance Providers
         </h3>
         <div className="provider-carousel">
         </div>
