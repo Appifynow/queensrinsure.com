@@ -24,7 +24,7 @@ export const Calendar =({ calLink, onConfirm } : { calLink: string; onConfirm: (
   }, []);
 
   return (
-    <div style={{ padding: "20px", maxWidth: "800px", margin: "0 auto" }}>
+    <div className="md:p-2">
       <h1 style={{ fontSize: "32px", marginBottom: "20px", textAlign: "center" }}>
         Pick a Day and Time
       </h1>

@@ -48,11 +48,11 @@ export function FAQSection() {
   ];
 
   return (
-    <main className="max-w-4xl mx-auto flex-1 mx-auto px-6 py-12 w-full">
-      <div className="bg-white rounded-3xl shadow-xl p-12">
+    <main className="md:max-w-4xl mx-auto flex-1 mx-auto md:px-6 md:py-12 w-full">
+      <div className="bg-white md:rounded-3xl shadow-xl p-12">
         <div className="text-center mb-10">
           <div className="flex items-center justify-center gap-4 mb-4">
-            <MessageSquare className="w-16 h-16 text-purple-600" />
+            <MessageSquare className=" hidden md:block w-16 h-16 text-purple-600" />
             <h2 className="text-5xl font-bold text-gray-900">Frequently Asked Questions</h2>
           </div>
           <p className="text-2xl text-gray-700">Quick answers to common questions</p>

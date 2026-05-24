@@ -20,8 +20,8 @@ export function ScheduleSection({ agents }: { agents: Agent[] }) {
   }, [])
 
   return (
-    <main className="max-w-4xl mx-auto flex-1 mx-auto px-6 py-12 w-full">
-       <div className="bg-white rounded-3xl shadow-xl p-12">
+    <main className="max-w-4xl mx-auto flex-1 mx-auto md:px-6 md:py-12 w-full">
+       <div className="bg-white md:rounded-3xl shadow-xl p-12">
          {/* Meeting Type */}
           { !meetingType && (<div>
             <h2 className="block text-2xl font-semibold text-gray-900 mb-4">
