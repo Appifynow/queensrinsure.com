@@ -3,7 +3,7 @@ import dq from '../assests/images/david_queen_sr.jpg';
 export const agents: Agent[] = [
   {
     id: 1,
-    name: 'Drewsilla Mcmillan',
+    name: 'Drewsilla McMillan',
     photo: drew,
     title: 'Senior Insurance Advisor',
     phone: '9046109597',
@@ -25,11 +25,11 @@ export const agents: Agent[] = [
   },
   {
     id: 3,
-    name: 'Khalid Kareem',
+    name: 'Khalil Abdul-Kareem',
     photo: 'https://images.unsplash.com/photo-1718209881007-c0ecdfc00f9d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600',
     title: 'Insurance Advisor',
     phone: '8005550103',
-    email: 'khalid.kareem@healthcarenav.com',
+    email: 'khalil.kareem@healthcarenav.com',
     specialty: 'Life Insurance & Estate Planning',
     states: ['Florida', 'Georgia', 'North Carolina', 'South Carolina'],
     calLink: 'david-queen-jr',
