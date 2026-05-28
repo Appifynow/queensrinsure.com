@@ -21,17 +21,17 @@ export const agents: Agent[] = [
     email: 'queensrinsure@outlook.com',
     specialty: 'Medicare, Final Expenses, Dental & Vision, Hospital Indemnity',
     states: ['Georgia'],
-    calLink: 'david-queen-jr',
+    calLink: 'dqueensr',
   },
   {
     id: 3,
     name: 'Khalil Abdul-Kareem',
     photo: 'https://images.unsplash.com/photo-1718209881007-c0ecdfc00f9d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600',
     title: 'Insurance Advisor',
-    phone: '8005550103',
-    email: 'khalil.kareem@healthcarenav.com',
-    specialty: 'Life Insurance & Estate Planning',
-    states: ['Florida', 'Georgia', 'North Carolina', 'South Carolina'],
+    phone: '9122227035',
+    email: 'Khalilcontact786@gmail.com',
+    specialty: 'Medicare Advantage, Medicare Supplements',
+    states: [ 'Georgia'],
     calLink: 'david-queen-jr',
   }
 ];

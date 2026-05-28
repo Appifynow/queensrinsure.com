@@ -8,12 +8,24 @@ export const Calendar =({ calLink, onConfirm } : { calLink: string; onConfirm: (
       const cal = await getCalApi({ namespace: "accessible-booking" });
       if (cal) {
         cal("ui", {
+          cssVarsPerTheme: {
+            light:{
+              'spacing': '0.45rem',
+              'cal-brand': '#034081', // High contrast black primary elements
+            },
+            dark: {
+              spacing: '0.45rem',
+              'cal-brand': '#034081', // High contrast black primary elements
+            }
+            
+          },
           theme: "light", // Keep it light for maximum readability/contrast
-          hideEventTypeDetails: true, // Strips away text clutter
           layout: "week_view", // Stable, predictable calendar view
           styles: {
+
             branding: {
-              brandColor: "#000000", // High contrast black primary elements
+             
+              brandColor: "#034081", // High contrast black primary elements
             }
           }
         });
@@ -32,6 +44,7 @@ export const Calendar =({ calLink, onConfirm } : { calLink: string; onConfirm: (
       <Cal
         namespace="accessible-booking"
         calLink={calLink}
+        config={{ layout: 'week_view'}}
       />
     </div>
   );
