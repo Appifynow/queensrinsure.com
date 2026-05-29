@@ -32,7 +32,7 @@ export const agents: Agent[] = [
     email: 'Khalilcontact786@gmail.com',
     specialty: 'Medicare Advantage, Medicare Supplements',
     states: [ 'Georgia'],
-    calLink: 'david-queen-jr',
+    calLink: 'khalil-abdul-kareem',
   }
 ];
 
