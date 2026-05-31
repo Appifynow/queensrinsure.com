@@ -26,7 +26,7 @@ export const agents: Agent[] = [
   {
     id: 3,
     name: 'Khalil Abdul-Kareem',
-    photo: 'https://images.unsplash.com/photo-1718209881007-c0ecdfc00f9d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600',
+    photo: 'https://res.cloudinary.com/dwzatjoyv/image/upload/v1780179207/khalil_snrkod.jpg',
     title: 'Insurance Advisor',
     phone: '9122227035',
     email: 'Khalilcontact786@gmail.com',
